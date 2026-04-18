@@ -27,7 +27,7 @@ class Developer extends Person {
             }
             curObject = Object.getPrototypeOf(curObject);
         }
-        
+
         let idx = 0;
         return {
             next() {
@@ -49,9 +49,6 @@ class Developer extends Person {
 
 const dev = new Developer("Joe", "C++");
 
-Array.prototype[Symbol.toPrimitive] = function() {
-
-}
 for (const [key, val] of dev) {
     console.log(`${key}: ${val}`);
 }
