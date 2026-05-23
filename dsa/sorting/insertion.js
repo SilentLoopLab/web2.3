@@ -1,4 +1,4 @@
-function insertionSort(arr) {
+export default function insertionSort(arr) {
     let size = arr.length;
 
     for (let i = 1; i < size; ++i) {
